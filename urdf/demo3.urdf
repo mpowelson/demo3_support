@@ -15,24 +15,24 @@
   <link name="panda_link0">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link0.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link0.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link0.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link0.stl"/>
       </geometry>
     </collision>
   </link>
   <link name="panda_link1">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link1.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link1.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link1.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link1.stl"/>
       </geometry>
     </collision>
   </link>
@@ -47,12 +47,12 @@
   <link name="panda_link2">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link2.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link2.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link2.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link2.stl"/>
       </geometry>
     </collision>
   </link>
@@ -67,12 +67,12 @@
   <link name="panda_link3">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link3.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link3.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link3.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link3.stl"/>
       </geometry>
     </collision>
   </link>
@@ -87,12 +87,12 @@
   <link name="panda_link4">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link4.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link4.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link4.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link4.stl"/>
       </geometry>
     </collision>
   </link>
@@ -107,12 +107,12 @@
   <link name="panda_link5">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link5.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link5.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link5.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link5.stl"/>
       </geometry>
     </collision>
   </link>
@@ -127,12 +127,12 @@
   <link name="panda_link6">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link6.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link6.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link6.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link6.stl"/>
       </geometry>
     </collision>
   </link>
@@ -147,12 +147,12 @@
   <link name="panda_link7">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/visual/link7.dae"/>
+        <mesh filename="package://demo3_support/meshes/visual/link7.dae"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://franka_config/meshes/collision/link7.stl"/>
+        <mesh filename="package://demo3_support/meshes/collision/link7.stl"/>
       </geometry>
     </collision>
   </link>
@@ -180,7 +180,7 @@
   <link name="workcell_base">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/workcell.STL"/>
+        <mesh filename="package://demo3_support/meshes/workcell.STL"/>
       </geometry>
       <material name="light_gray"/>
     </visual>
@@ -231,13 +231,13 @@
   <link name="cube">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/10_20Prism.STL"/>
+        <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
       </geometry>
       <material name="red"/>
     </visual>
     <collision name="cube_collision">
       <geometry>
-        <mesh filename="package://franka_config/meshes/10_20Prism.STL"/>
+        <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
       </geometry>
     </collision>
   </link>

@@ -2,7 +2,7 @@
     <arg name="rviz" default="true"/>
 
     <!-- Load Robot Model    -->
-    <param name="robot_description"  command="$(find xacro)/xacro --inorder $(find franka_config)/urdf/robot.urdf.xacro"/>
+    <param name="robot_description"  command="$(find xacro)/xacro --inorder $(find demo3_support)/urdf/demo3.urdf"/>
 
     <!-- Launch GUI to drive joints   -->
     <param name="use_gui" value="true"/>
@@ -12,7 +12,7 @@
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
 
     <!-- Launch visualization -->
-    <node if="$(arg rviz)" pkg="rviz" type="rviz" name="ceccrebot_viz"
-      args="-d $(find franka_config)/launch/franka.rviz" />
+    <node if="$(arg rviz)" pkg="rviz" type="rviz" name="demo3_viz"
+      args="-d $(find demo3_support)/launch/demo3.rviz" />
 
 </launch>

@@ -13,7 +13,7 @@
   <link name="workcell_base">
     <visual>
       <geometry>
-        <mesh filename="package://franka_config/meshes/workcell.STL"/>
+        <mesh filename="package://demo3_support/meshes/workcell.STL"/>
       </geometry>
       <material name="light_gray"/>
     </visual>
@@ -66,13 +66,13 @@
 <link name="cube">
   <visual>
     <geometry>
-      <mesh filename="package://franka_config/meshes/10_20Prism.STL"/>
+      <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
     </geometry>
     <material name="red"/>
   </visual>
   <collision name="cube_collision">
   <geometry>
-    <mesh filename="package://franka_config/meshes/10_20Prism.STL"/>
+    <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
   </geometry>
   </collision>
 </link>
