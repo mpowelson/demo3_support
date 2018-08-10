@@ -5,16 +5,20 @@
     <link name="base_link"/>
 
     <!-- Include robot -->
-    <xacro:include filename="$(find franka_config)/urdf/panda_arm.xacro"/>
+    <xacro:include filename="$(find demo3_support)/urdf/panda_arm.xacro"/>
     <xacro:panda_arm connected_to="base_link"/>
 
 
     <!-- Include workcell (creates joint from world to workcell_base)-->
-    <xacro:include filename="$(find franka_config)/urdf/environment.xacro"/>
+    <xacro:include filename="$(find demo3_support)/urdf/environment.xacro"/>
     <xacro:workcell parent_link="world" >
         <origin xyz="0.0 0.0 0.77153" rpy="0 0 0"/>
     </xacro:workcell >
 
+    <xacro:include filename="$(find demo3_support)/urdf/environment.xacro"/>
+    <xacro:cube parent_link="workcell_base" >
+        <origin xyz="0.15 0.4 0.1" rpy="0 0 0"/>
+    </xacro:cube >
 
     <!-- Create joints -->
     <joint name="workcell_base_to_base" type="fixed">

@@ -6,6 +6,9 @@
   <material name="light_gray">
     <color rgba="0.7 0.7 0.7 1"/>
   </material>
+  <material name="red">
+    <color rgba="1.0 0.1 0.1 1"/>
+  </material>
 
   <link name="workcell_base">
     <visual>
@@ -57,8 +60,30 @@
     <parent link="${parent_link}"/>
     <child link="workcell_base"/>
   </joint>
-
 </xacro:macro>
+
+<xacro:macro name="cube" params="parent_link *location">
+<link name="cube">
+  <visual>
+    <geometry>
+      <mesh filename="package://franka_config/meshes/10_20Prism.STL"/>
+    </geometry>
+    <material name="red"/>
+  </visual>
+  <collision name="cube_collision">
+  <geometry>
+    <mesh filename="package://franka_config/meshes/10_20Prism.STL"/>
+  </geometry>
+  </collision>
+</link>
+
+<joint name="cube_joint" type ="fixed">
+  <xacro:insert_block name="location" />
+  <parent link="${parent_link}"/>
+  <child link="cube"/>
+</joint>
+</xacro:macro>
+
 
 
 </robot>
