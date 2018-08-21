@@ -228,24 +228,7 @@
     <parent link="world"/>
     <child link="workcell_base"/>
   </joint>
-  <link name="cube">
-    <visual>
-      <geometry>
-        <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
-      </geometry>
-      <material name="red"/>
-    </visual>
-    <collision name="cube_collision">
-      <geometry>
-        <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
-      </geometry>
-    </collision>
-  </link>
-  <joint name="cube_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0.15 0.4 0.1"/>
-    <parent link="workcell_base"/>
-    <child link="cube"/>
-  </joint>
+
   <!-- Create joints -->
   <joint name="workcell_base_to_base" type="fixed">
     <parent link="workcell_base"/>

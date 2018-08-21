@@ -62,26 +62,7 @@
   </joint>
 </xacro:macro>
 
-<xacro:macro name="cube" params="parent_link *location">
-<link name="cube">
-  <visual>
-    <geometry>
-      <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
-    </geometry>
-    <material name="red"/>
-  </visual>
-  <collision name="cube_collision">
-  <geometry>
-    <mesh filename="package://demo3_support/meshes/10_20Prism.STL"/>
-  </geometry>
-  </collision>
-</link>
 
-<joint name="cube_joint" type ="fixed">
-  <xacro:insert_block name="location" />
-  <parent link="${parent_link}"/>
-  <child link="cube"/>
-</joint>
 </xacro:macro>
 
 
